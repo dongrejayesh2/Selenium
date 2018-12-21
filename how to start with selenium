@@ -1,0 +1,214 @@
+How to start Learning Selenium?
+
+This is the best time to start learning Selenium testing by your own with the help of this free Selenium Training series. 
+Read tutorials, practice examples at your home, and put your queries in the comment section of the respective tutorials. 
+We will address all of these queries.
+Experienced Selenium professionals – you too can take part in this series by providing answers to the reader’s queries in comments.
+
+Selenium Introduction
+Selenium is not just a tool, it is a cluster of independent tools. 
+We will look into some of the Selenium tools in detail with practical examples wherever applicable.
+
+Before you jump into reading this exciting and useful series, let us take a look at what it has got in store for you.
+
+Why Selenium?
+The current industry trends have shown that there is a mass movement towards automation testing. Hence a cluster of repetitive manual testing scenarios has raised a demand to bring in the practice of automating these manual scenarios.
+
+There are several Benefits of implementing Automation Test; let’s take a look at them:
+
+*Supports execution of repeated Test Cases
+*Aids in testing a large Test Matrix
+*Enables parallel execution
+*Encourages unattended execution
+*Improves accuracy thereby reducing human-generated errors
+*Saves time and money
+
+All these benefits result in the following:
+
+*High ROI
+*Faster GoTo market
+
+One of the most commonly asked questions that come with this are –
+
+What is the best tool for me to get my tests automated?
+Is there a cost involved in it?
+Is it easy to adapt?
+
+One of the best answers to all the above questions for automating web-based applications is Selenium. 
+Because:
+
+It’s an open source
+It has a large user base and helping communities
+It has multi-browser and platform compatibility
+It has active repository developments
+It supports multiple language implementations
+
+First Glance at Selenium
+Selenium is one of the most popular Automated Testing suites. 
+Selenium is designed in such a way to support and encourage Automation Testing of functional aspects of web-based applications and 
+a wide range of browsers and platforms. Due to its existence in the open source community, 
+it has become one of the most accepted tools amongst the testing professionals.
+
+Selenium supports a broad range of browsers, technologies, and platforms.
+
+Selenium Components
+Selenium is not just a single tool or a utility, its rather a package of several testing tools, 
+hence it is referred as a Suite. 
+Each of these tools is designed to cater different testing and test environment requirements.
+
+The suite package constitutes of the following set of tools:
+
+Selenium Integrated Development Environment (IDE) Selenium intro 2
+Selenium Remote Control (RC) Selenium intro 3
+Selenium WebDriver
+Selenium Grid 
+
+Selenium RC and WebDriver, combined together are popularly known as Selenium 2. 
+Selenium RC alone is also referred as Selenium 1.
+
+Brief Introduction to Selenium Tools
+
+Selenium Core
+
+Selenium is a result of the continuous efforts by an engineer named Jason Huggins from ThoughtWorks. 
+Being responsible for the testing of an internal Time0 and Expenses application, he realized the need for an automation testing tool 
+in order to get rid of repetitive manual tasks without compromising the quality and accuracy.
+
+As a result, he built a JavaScript program, named as “JavaScriptTestRunner” in early 2004 that could automatically control 
+the browser’s actions which seemed very much similar to that of a user communicating with the browser.
+
+Henceforth, Jason started demoing the tool to a vast audience. Eventually, the discussions were laid out to categorize this tool 
+in an open source category and its potential to grow as a re-usable testing framework for other web-based applications.
+
+The tool was later acclaimed with the name “Selenium Core”.
+
+Selenium IDE (Selenium Integrated Development Environment)
+Selenium IDE was developed by Shinya Kasatani. While studying Selenium Core, 
+he realized that this JavaScript code can be extended to create an integrated development environment (IDE), 
+which can be plugged into Mozilla Firefox. 
+This IDE was capable of recording and playing back the user actions on a Firefox instance to which it was plugged-in. 
+Later on, Selenium IDE became a part of Selenium Package in the year 2006. 
+Later this tool turned out a great value and potential to the community.
+
+Selenium IDE is the simplest and easiest of all the tools within the Selenium Package. 
+Its record and playback features make it exceptionally easy to learn with minimal acquaintances to any programming language. 
+With several advantages, a few disadvantages accompanied Selenium IDE, 
+thus making it inappropriate to be used in case of more advanced test scripts.
+
+The disadvantages of IDE are really not disadvantages of Selenium, in reality. 
+Rather they are just limitations to what IDE could achieve. 
+These limitations can be overcome by using Selenium RC or WebDriver.
+
+Selenium RC (Selenium Remote Control)
+
+Selenium RC is a tool written in Java to allow a user to construct test scripts for a web-based application in any programming language 
+he/she chooses. Selenium RC came as a result to overcome the various disadvantages incurred by Selenium IDE or Core.
+
+Loopholes and restrictions which were imposed while using Selenium Core made it difficult for the user to leverage 
+the benefits of the tool to its totality. Thus it made the testing process a cumbersome and a far-reaching task.
+
+One of the crucial restrictions was Same Origin Policy.
+
+Problem With Same Origin Policy:
+
+The problem with Same Origin Policy is, it disallows to access the DOM of a document from an origin that is different from 
+the origin we are trying to access the document.
+
+Origin is a sequential combination of scheme, host, and port of the URL. 
+For example, for the URL http://www.seleniumhq.org/projects/, the origin is a combination of HTTP, seleniumhq.org, 80 correspondingly.
+
+Thus Selenium Core (JavaScript Program) cannot access the elements from an origin that is different from where it was launched.
+
+For Example, if I have launched the JavaScript Program from “http://www.seleniumhq.org/”, 
+then I would have been able to access the pages within the same domain such as “http://www.seleniumhq.org/projects/” or 
+“http://www.seleniumhq.org/download/”. The other domains like google.com, yahoo.com would no more be accessible.
+
+Thus, to test any application using Selenium Core, one has to install the entire application on 
+the Selenium Core as well as a web server to overcome the problem of same origin policy.
+
+So, In order to govern the same origin policy without the need of making a separate copy of Application under test on the Selenium Core, 
+Selenium Remote Control was introduced. While Jason Huggins was demoing Selenium, another fellow colleague at ThoughtWorks named 
+Paul Hammant suggested a workaround of same origin policy and a tool that can be wired up with a programming language of our choice. 
+Thus Selenium RC came into existence.
+
+Workflow Description
+
+The user creates a test script in the desired programming language.
+For every programming language, there is a designated client library.
+Client library deports the test commands to the selenium server.
+Selenium server deciphers and converts the test commands into JavaScript commands and sends them to the browser.
+Browser executes the commands using Selenium Core and sends the results back to the Selenium server
+Selenium server delivers the test results to the client library.
+
+Unlike Selenium IDE, Selenium RC supports a wide range of browsers and platforms.
+
+There are a few pre-requisites to be in place before creating Selenium RC scripts:
+
+A Programming Language – Java, C#, Python etc.
+An Integrated Development Environment –Eclipse, Netbeans etc.
+A Testing Framework (optional) – JUnit, TestNG etc.
+And Selenium RC setup off course
+
+Advantages and Disadvantages of Selenium RC:
+
+Please refer the following figure to more about the advantages and disadvantages of Selenium RC.
+
+Selenium Grid
+With selenium RC, the life of a tester has always been positive and favourable until the emerging trends raised a demand to execute 
+the same or different test scripts on multiple platforms and browsers concurrently so as to achieve distributed test execution, 
+testing under different environments and saving execution time remarkably. Thus, catering these requirements Selenium Grid was brought into the picture.
+
+Selenium Grid was introduced by Pat Lightbody in order to address the need for executing the test suites on multiple platforms simultaneously.
+
+Selenium WebDriver
+
+Selenium WebDriver was created by yet another engineer at ThoughtWorks named Simon Stewart in the year 2006. 
+WebDriver is also a web-based testing tool with a subtle difference with Selenium RC. Since the tool was built on the 
+fundamental where an isolated client was created for each of the web browsers; no JavaScript Heavy lifting was required. 
+This led to a compatibility analysis between Selenium RC and WebDriver. As a result of which a more powerful automated testing tool 
+was developed called Selenium 2.
+
+WebDriver is clean and purely an object-oriented framework. It utilizes the browser’s native compatibility to automation without 
+using any peripheral entity. With the increasing demand, it has gained a large popularity and user-base.
+
+Advantages and Disadvantages of Selenium WebDriver:
+
+Refer the following figure for more information about the advantages and disadvantages of WebDriver.
+
+Selenium 3
+
+Selenium 3 is an advanced version of Selenium 2. It is a tool which is focused on automation of mobile and web applications. 
+Stating that it supports mobile testing, we mean to say that the WebDriver API has been extended to address the needs of mobile application 
+testing. The tool is expected to be launched soon in the market.
+
+Environment and Technology Stack
+With the advent and addition of each new tool in the Selenium suite, environments and technologies become more compatible. Here is an exhaustive list of environments and technologies supported by Selenium Tools.
+
+Conclusion
+
+In this tutorial, we tried to make you acquainted with the Selenium suite describing its various components, usages, and their advantages over each other.
+
+Here are the review of this article.
+
+Selenium is a suite of several automated testing tools, each of them catering to different testing needs.
+All these tools fall under the same umbrella of an open source category and support only web-based testing.
+Selenium suite is comprised of 4 basic components; Selenium IDE, Selenium RC, WebDriver, and Selenium Grid.
+The user is expected to choose wisely the right Selenium tool for his/her needs.
+Selenium IDE is distributed as a Firefox plug-in and it is easier to install and use. The user is not required to possess prior programming knowledge. 
+Selenium IDE is an ideal tool for a naive user.
+Selenium RC is a server that allows a user to create test scripts in the desired programming language. 
+It also allows executing test scripts within the large spectrum of browsers.
+Selenium Grid brings out an additional feature to Selenium RC by distributing its test script on different platforms 
+and browsers at the same time for execution, thus implementing the master-slave architecture.
+WebDriver is a different tool altogether that has various advantages over Selenium RC. 
+The fusion of Selenium RC and WebDriver is also known as Selenium 2. WebDriver directly communicates with the web browser 
+and uses its native compatibility to automate.
+Selenium 3 is the most anticipated inclusion in the Selenium suite which is yet to be launched in the market. 
+Selenium 3 strongly encourages mobile testing.
+In the next tutorial, we would be discussing the basics of Selenium IDE, its installation, and the features. 
+We would also have a look at the basic terminologies and nomenclatures of Selenium IDE.
+
+
+
+
+
